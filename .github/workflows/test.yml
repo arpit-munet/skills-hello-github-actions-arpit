@@ -1,0 +1,13 @@
+name: stage-test-aks
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+     steps:
+    
+    - name: Checkout current repository
+      uses: actions/checkout@v3
